@@ -429,7 +429,7 @@ For more complicated classes, you should feel free to go beyond these patterns t
 \index{S3!generics}
 \index{generics!S3}
 
-The job of an S3 generic is to perform method dispatch, i.e. find the specific implementation for a class. Method dispatch is performed by `UseMethod()`, which every generic calls[^internal-generic]. `UseMethod()` takes two arguments: the name of the generic function (required), and the argument to use for method dispatch (optional). If you omit the second argument, it will dispatch based on the first argument, which is almost always what is desired.
+The job of an S3 generic is to perform method dispatch, i.e. find the specific implementation for a class. Method dispatch is performed by `UseMethod()` for every generic calls[^internal-generic]. `UseMethod()` takes two arguments: the name of the generic function (required), and the argument to use for method dispatch (optional). If you omit the second argument, it will dispatch based on the first argument, which is almost always what is desired.
 
 [^internal-generic]: The exception is internal generics, which are implemented in C, and are the topic of Section \@ref(internal-generics).
 
